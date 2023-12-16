@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Agricultural Yield Prediction</title>
+
+<body bgcolor=lightblue>
+    <center>
+<h1 align='center'>Yield Prediction</h1><br>
+        
+<form method="POST", action="{{url_for('predict_yield')}}">
+    <label for="Seed_Variety"> Seed Variety :</label>
+    <input type="text" id="Seed_Variety" name="Seed_Variety"> <br><br>
+
+
+    <label for="Soil_Quality"> Soil Quality :</label>
+    <input type="text" id="Soil_Quality" name="Soil_Quality"> <br><br>
+
+    <label for="Fertilizer_Amount_kg_per_hectare"> Fertilizer Amount:</label>
+    <input type="text" id="Fertilizer_Amount_kg_per_hectare" 	name="Fertilizer_Amount_kg_per_hectare"> <br><br>
+
+    <label for="Sunny_Days"> Sunny Days :</label>
+    <input type="text" id="Sunny_Days" name="Sunny_Days"> <br><br>
+
+    <label for="Rainfall_mm"> Rainfall in mm :</label>
+    <input type="text" id="Rainfall_mm" name="Rainfall_mm"> <br><br>
+
+    <label for="Irrigation_Schedule"> Irrigation Schedule :</label>
+    <input type="text" id="Irrigation_Schedule" name="Irrigation_Schedule"> <br><br>
+
+    <input type="submit",value='Predicted Yield'>
+    </form>
+   
+    <img align='center' src='static\agri.jpg' alt="agri">
+    </center>
+    </body>
+</head>
+</html>
